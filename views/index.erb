@@ -1,0 +1,9 @@
+
+<form method="post" action="/names">
+	<input type='text' name='p1_name' />
+	<input type='text' name='p2_name' />
+	<input type='submit' value="Submit">
+</form>
+<% if @names %>
+<h1> <%= @names['p1_name']+' vs '+ @names['p2_name'] %></h1>
+<% end %>
