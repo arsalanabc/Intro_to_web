@@ -13,9 +13,14 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
+  	 
     @player_1 = session['player_1']
     @player_2 = session['player_2']
     erb :play
+  end
+
+  get '/score' do
+  	erb :score
   end
 
   # Start the server if ruby file executed directly
