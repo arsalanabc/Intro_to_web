@@ -1,6 +1,16 @@
 <h1> <%= "#{ @player_1 } vs #{ @player_2 }" %></h1>
 
-<h2><%= @player_2 %> score is 0</h2>
+<h2> <%= "#{@player_2} score is 70" %> </h2>
+
+<% if @attacked %>
+<%= "#{@player_2} was attacked" %>
+<% end %>
+
+<form action="/play">
+	
+<button name='attack' value="submit"> Attack </button>
+
+</form>
 
 
 
